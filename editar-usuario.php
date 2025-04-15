@@ -9,22 +9,22 @@ $row = $res->fetch_object();
 <form action="?page=salvar" method="POST">
 	<input type="hidden" name="id" value="<?php print $row->id;?>">
 	<div class="mb-3">
-		<label>Nome</label>
+		<label>Nome:</label>
 		<input type="text" name="nome" value="<?php print $row->nome; ?>" class="form-control">
 	</div>
 	<br>
 	<div class="mb-3">
-		<label>E-mail</label>
+		<label>E-mail:</label>
 		<input type="email" name="email" class="form-control">
 	</div>
 <br>
 	<div class="mb-3">
-		<label>Senha  </label>
+		<label>Senha :</label>
 		<input type="password" name="senha" class="form-control" required>
 	</div>
 	<br>
 	<div class="mb-3">
-		<label>Data de Nascimento</label>
+		<label>Data de Nascimento:</label>
 		<input type="date" name="data_nasc" value="<?php print $row->data_nascimento; ?>" class="form-control">
 	</div>
 	<br>
